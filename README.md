@@ -2,8 +2,8 @@
 
 ## Deployed API Link
 
-```bash
-
+```
+https://onecv-assessment.onrender.com
 ```
 
 ## Project Structure
