@@ -76,7 +76,7 @@ DB_URL=postgres://mqjqotqy:Q9cQLXuVXQr7efbpWDAv9GuBVOLi9hDE@topsy.db.elephantsql
 
 ## Running the project locally
 
-There are 2 ways to run this project. The first is using docker-compose while the second is manually starting the server.
+There are 2 ways to run this project. The first is using docker-compose while the second is manually starting the server. Visit any api endpoint at http://localhost:8000
 
 ### Using Docker-Compose
 
