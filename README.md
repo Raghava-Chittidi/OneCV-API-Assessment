@@ -13,45 +13,49 @@
 ├── Dockerfile
 ├── README.md
 ├── cmd
-│ └── server
-│ └── main.go
+│   └── server
+│       └── main.go
+├── db_table_images
+│   ├── registered.png
+│   ├── students.png
+│   └── teachers.png
 ├── docker-compose.yml
 ├── go.mod
 ├── go.sum
 └── internal
-├── api
-│ └── api.go
-├── dataaccess
-│ ├── student.go
-│ └── teacher.go
-├── database
-│ └── database.go
-├── errors
-│ └── errors.go
-├── handlers
-│ ├── commonstudents.go
-│ ├── notifications.go
-│ ├── register.go
-│ └── suspend.go
-├── models
-│ ├── student.go
-│ └── teacher.go
-├── router
-│ └── router.go
-├── routes
-│ └── routes.go
-├── tests
-│ ├── commonstudents_test.go
-│ ├── main_test.go
-│ ├── notifications_test.go
-│ ├── register_test.go
-│ ├── student_test.go
-│ ├── suspend_test.go
-│ ├── teacher_test.go
-│ └── util_test.go
-└── util
-├── migration.go
-└── util.go
+    ├── api
+    │   └── api.go
+    ├── dataaccess
+    │   ├── student.go
+    │   └── teacher.go
+    ├── database
+    │   └── database.go
+    ├── errors
+    │   └── errors.go
+    ├── handlers
+    │   ├── commonstudents.go
+    │   ├── notifications.go
+    │   ├── register.go
+    │   └── suspend.go
+    ├── models
+    │   ├── student.go
+    │   └── teacher.go
+    ├── router
+    │   └── router.go
+    ├── routes
+    │   └── routes.go
+    ├── tests
+    │   ├── commonstudents_test.go
+    │   ├── main_test.go
+    │   ├── notifications_test.go
+    │   ├── register_test.go
+    │   ├── student_test.go
+    │   ├── suspend_test.go
+    │   ├── teacher_test.go
+    │   └── util_test.go
+    └── util
+        ├── migration.go
+        └── util.go
 ```
 
 ## Setting up the project
@@ -112,7 +116,7 @@ go test
 ## Current database tables and data
 
 ![students table](./db_table_images/students.png)
-![teachers table](./db_table_imagesteachers.png)
+![teachers table](./db_table_images/teachers.png)
 ![teachers_registered_students table](./db_table_images/registered.png)
 
 ## API Endpoints
@@ -165,7 +169,7 @@ Error response status: HTTP 422 - When no teacher emails are provided
 Request Body:
 
 {
-  "student" : "studentmary@gmail.com"
+  "student": "studentmary@gmail.com"
 }
 
 Success response status: HTTP 204
